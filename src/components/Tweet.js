@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 
-const Tweet = ({ tweetObj, isOwner }) => {
+const Tweet = ({ tweetObj, isOwner, userObj }) => {
 
     const [editing, setEditing] = useState(false);
     const [newTweet, setNewTweet] = useState(tweetObj.text)
@@ -56,20 +56,24 @@ const Tweet = ({ tweetObj, isOwner }) => {
             </>
             ) : (
                 <>
-                    <h4>{tweetObj.text}</h4>
-                    {tweetObj.attachmentUrl && (
-                        <img src={tweetObj.attachmentUrl} width="50px" height="50px" />
-                    )}
+                    <div>
+                        <h4>{tweetObj.text}</h4>
+                        <h5>{tweetObj.name}</h5>
+                    </div>
+                    <div>
+                        {tweetObj.attachmentUrl && (
+                            <img src={tweetObj.attachmentUrl} width="50px" height="50px" />
+                        )}
+                    </div>
                     {isOwner && (
                         <div className="tweet__actions">
-                        <span onClick={onDeleteClick}>
-                          <FontAwesomeIcon icon={faTrash} />
-                        </span>
-                        <span onClick={toggleEditing}>
-                          <FontAwesomeIcon icon={faPencilAlt} />
-                        </span>
-                      </div>
-         
+                            <span onClick={onDeleteClick}>
+                            <FontAwesomeIcon icon={faTrash} />
+                            </span>
+                            <span onClick={toggleEditing}>
+                            <FontAwesomeIcon icon={faPencilAlt} />
+                            </span>
+                        </div>
                     )}
                 </>
             )}       

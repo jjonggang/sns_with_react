@@ -38,6 +38,7 @@ const Home = ({userObj}) => {
             <div style={{marginTop: 30}}>
                 {tweets.map((tweet) => (
                     <Tweet 
+                        userObj = {userObj}
                         key = {tweet.id} 
                         tweetObj = {tweet}
                         isOwner = {tweet.creatorId === userObj.uid}

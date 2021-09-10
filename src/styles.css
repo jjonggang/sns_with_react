@@ -11,7 +11,7 @@ input {
 }
 
 body {
-  background-color: black;
+  background-color: #353848;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
@@ -61,13 +61,13 @@ form {
   text-align: center;
   color: white;
   border-radius: 20px;
-  background-color: #04aaff;
+  background-color: #cb7575;
   cursor: pointer;
 }
 
 .cancelBtn {
   cursor: pointer;
-  background-color: tomato;
+  background-color: #cb7575;
 }
 
 /* Profile Page */
@@ -108,7 +108,7 @@ form {
   height: 40px;
   padding: 0px 20px;
   color: white;
-  border: 1px solid #04aaff;
+  border: 1px solid #cb7575;
   border-radius: 20px;
   font-weight: 500;
   font-size: 12px;
@@ -117,7 +117,7 @@ form {
 .factoryInput__arrow {
   position: absolute;
   right: 0;
-  background-color: #04aaff;
+  background-color: #cb7575;
   height: 40px;
   width: 40px;
   padding: 10px 0px;
@@ -127,7 +127,7 @@ form {
 }
 
 .factoryInput__label {
-  color: #04aaff;
+  color: #cb7575;
   cursor: pointer;
 }
 
@@ -149,7 +149,7 @@ form {
 }
 
 .factoryForm__clear {
-  color: #04aaff;
+  color: #cb7575;
   cursor: pointer;
   text-align: center;
 }
@@ -182,22 +182,23 @@ form {
 
 .tweet h4 {
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .tweet img {
-  right: -10px;
-  top: 20px;
+  right: -5px;
+  top: 0px;
   position: absolute;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-top: 10px;
+  width: 70px;
+  height: 70px;
+  margin-top: -10px;
 }
 
 .tweet__actions {
   position: absolute;
   right: 10px;
-  top: 10px;
+  bottom: 10px;
 }
 
 .tweet__actions span {
@@ -252,25 +253,36 @@ form {
 
 .authSubmit {
   text-align: center;
-  background: #04aaff;
+  background: #cb7575;
   color: white;
   margin-top: 10;
   cursor: pointer;
 }
 
 .authError {
-  color: tomato;
+  color: #cb7575;
   text-align: center;
   font-weight: 500;
   font-size: 12px;
 }
 
 .authSwitch {
-  color: #04aaff;
+  color: #cb7575;
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 50px;
   display: block;
   font-size: 12px;
   text-decoration: underline;
+}
+
+#login_icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 50px;
+}
+
+#main_icon {
+  width: 50px;
+  height: 50px;
 }

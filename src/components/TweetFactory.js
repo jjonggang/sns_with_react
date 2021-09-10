@@ -28,7 +28,9 @@ import { useState } from "react";
        text: tweet,
        createdAt: Date.now(),
        creatorId: userObj.uid,
+       name: userObj.displayName,
        attachmentUrl,
+       
      };
 
      await dbService.collection("tweets").add(tweetObj);

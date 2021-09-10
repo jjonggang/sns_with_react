@@ -23,12 +23,13 @@ const Auth = () => {
 
     return (
         <div className="authContainer">
-            <FontAwesomeIcon 
+            {/* <FontAwesomeIcon 
                 icon={faTwitter}
-                color={"#04AAFF"}
+                color={"#cb7575"}
                 size="3x"
                 style={{marginBottom: 30}}
-            />
+            /> */}
+            <img id="login_icon" src="https://i.postimg.cc/yNyBxhKZ/003-1.png" />
             <AuthForm />
             <div className="authBtns">
                 <button onClick = {onSocialClick} name = "google" className="authBtn">Continue with google <FontAwesomeIcon icon={faGoogle} /></button>
