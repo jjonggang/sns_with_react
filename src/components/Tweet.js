@@ -58,7 +58,7 @@ const Tweet = ({ tweetObj, isOwner, userObj }) => {
                 <>
                     <div>
                         <h4>{tweetObj.text}</h4>
-                        <h5>{tweetObj.name}</h5>
+                        <h5 id="userName">{tweetObj.name}</h5>
                     </div>
                     <div>
                         {tweetObj.attachmentUrl && (
