@@ -1,3 +1,3 @@
-# Twitter
+# 운동 기록 SNS 
 
-Twitter cloning with react and firebase
+
